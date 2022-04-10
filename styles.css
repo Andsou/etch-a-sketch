@@ -1,7 +1,21 @@
+#container {
+    display: flex;
+    justify-content: right;
+}
+
 #drawing-grids {
-    border: solid 5px #000000;
+    display: grid;
+    margin-top: 10px;
+
+    grid-template-columns: repeat(16, 30px);
+    grid-template-rows: repeat(16, 30px);
 }
 
 #drawing-grids div {
-    border: solid 1px black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    background: white;
+    border: 1px solid black;
 }
