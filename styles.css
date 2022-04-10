@@ -1,0 +1,7 @@
+#drawing-grids {
+    border: solid 5px #000000;
+}
+
+#drawing-grids div {
+    border: solid 1px black;
+}
