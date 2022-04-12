@@ -1,21 +1,64 @@
+body {
+    background-color: rgb(43, 42, 51);
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+h1 {
+    color: #4BB2F9;
+    text-align: center;
+}
+
+#clear-button {
+    background-color: #4c53af; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    height: 50px;
+    width: 200px;
+}
+
 #container {
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    gap: 25px;
 }
 
 #drawing-grids {
+    width: 500px;
+    height: 500px;
     display: grid;
     margin-top: 10px;
-
-    grid-template-columns: repeat(16, 30px);
-    grid-template-rows: repeat(16, 30px);
+    grid-template-columns: repeat(16, auto);
+    grid-template-rows: repeat(16, fill);
+    border: 5px #616466 solid;
 }
 
 #drawing-grids div {
+    overflow: hidden;
     justify-content: center;
     align-items: center;
-    display: flex;
+
     font-weight: bold;
-    background: white;
-    border: 1px solid black;
+    background: rgb(240, 238, 238);
+    /* //border: 1px solid black;  */
+}
+
+.squareClicked{
+    background-color: #1b1b1b;
+}
+
+#made-by {
+    color: aliceblue;
+    text-align: center;
 }
